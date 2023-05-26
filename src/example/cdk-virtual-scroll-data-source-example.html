@@ -1,0 +1,11 @@
+<cdk-virtual-scroll-viewport #viewport itemSize="5" class="example-viewport">
+  <div *cdkVirtualFor="let item of ds" class="example-item">
+    {{item || 'Loading...'}}
+  </div>
+</cdk-virtual-scroll-viewport>
+<button (click)="top()">go to top</button>
+<button (click)="viewUser()">go to 4000000</button>
+
+<!-- Copyright 2023 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
